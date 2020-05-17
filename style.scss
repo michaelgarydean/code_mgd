@@ -1,0 +1,237 @@
+/*
+Theme Name:     MGD - Code Portfolio Theme
+Theme URI:      
+Description:    Perfect-portfolio child theme.
+Author:         Michael Gary Dean
+Author URI:     code.michaeldean.ca
+Template:       perfect-portfolio
+Version:        0.1.0
+*/
+
+/*
+ * ====
+ * SITE
+ * ====
+ */
+
+/* 
+ * ---------
+ * VARIABLES
+ * ---------
+ */
+
+ /* colours */
+ $dark-colour: #1c1b1b;	/* black */
+ $accent-color: #FFF000; /* yellow */
+
+/*
+ * -------
+ * DOCUMENT
+ * -------
+ */
+.page {
+	background: $accent-color;
+}
+
+
+/* 
+ * ----
+ * TEXT
+ * ----
+ */
+
+/* h2 titles for gists */
+article > .entry-content > .tc-wrapper > h2 {
+    font-size: 1.5em;
+    margin-top: 100px;
+}
+
+/* intro text on homepage */
+.textwidget {
+	font-size: medium;
+}
+
+#main > header > h1 > p {
+	font-size: 0.4em;
+	font-weight: normal;
+}
+
+header > h2 > a > p {
+	
+	font-size: 0.5em;
+	font-weight: lighter;
+}
+
+/* 
+ * -------
+ * SPACING
+ * -------
+ */
+
+header.site-header {
+    margin-bottom: 100px;
+}
+
+/* Spacing between intro text and code/design icons */
+#about_section {
+	margin-bottom: 60px;
+}
+
+/* spacing between code and design icons */
+.home #service_section > div > div {
+	padding: 0px 25%;
+}
+
+/* Call to action */
+#cta_section {
+	margin-bottom: 0px;
+}
+
+.cta-section .widget_raratheme_companion_cta_widget > div {
+    min-height: 720px;
+}
+
+/* On posts */
+.single-post.full-width article.post {
+	margin-top: 60px;
+	padding-top: 0px;
+}
+
+#main > header > div.entry-meta {
+	display: none;
+}
+/* footer */
+#colophon > div.top-footer {
+	padding: 240px 0px;
+}
+
+/* Bottom footer */
+.bottom-footer {
+	background: $dark-colour;
+	height: 340px;
+}
+
+/* get the text and sub-text to line up for "michael gary dean" */
+#page > header > div > div.site-branding > div > p.site-description {
+	letter-spacing: -0.016em;
+}
+
+/* reduce header spacing on the blog/portfolio page */
+#content > div.page-description {
+	display: none;
+}
+
+.blog > #page > header.site-header {
+	margin-bottom: 50px;
+}
+
+/* 
+ * ------
+ * BUTTONS 
+ * ------
+ */
+
+/* 
+ * Make the buttons square, not round 
+ */
+.button-wrap .btn-cta {
+    border-radius: 0px;
+}
+
+
+.back-to-top {
+	border-radius: 0;
+	display: none;
+}
+
+.header-r button.toggle-btn {
+	
+	border-radius: 0;
+}
+
+/* Social icons in menu */
+.social-icons li a {
+	border-radius: 0px;
+}
+
+.tags a {
+		border-radius: 0px;
+}
+.tags a:hover {
+    background: $dark-colour;
+    color: #fff;
+		border-radius: 0px;
+}
+
+/* Tag cloud */
+.widget_tag_cloud .tagcloud a {
+	border-radius: 0px
+}
+
+.widget_tag_cloud .tagcloud a:hover {
+	background-color: $dark-colour;
+}
+
+/* 
+ * -------
+ * WIDGETS
+ * -------
+ */
+
+.top-footer .widget:last-child {
+    text-align: center;
+}
+
+.top-footer .widget .widget-title {
+    display: none;
+}
+
+
+/* 
+ * ----
+ * MENU 
+ * ----
+ */ 
+
+/* Alignment of menu items */
+.main-navigation ul.nav-menu {
+	padding-inline-start: 0px;
+}
+
+/* Don't show the search in the menu */
+.menu-wrap .menu-search {
+	display: none;
+}
+
+/* 
+ * ==============
+ * MOBILE SCREENS
+ * ==============
+ */
+@media screen and (max-width: 540px){
+	
+	/* spacing between code and design icons */
+	.home #service_section > div > div {
+		padding: 0px 0%;
+	}
+	
+	.textwidget {
+		font-size: medium;
+	}
+	
+	header.site-header {
+    	margin-bottom: 95px;
+			
+	}
+	section.about-section {
+    	margin-bottom: 0px;
+	}
+	.service-section .widgets-holder {
+		margin-top: 30px;
+		margin-bottom: 40px;
+    flex-flow: nowrap;
+	}
+		.site-header .header-r {
+	   display: none;
+	}
+}
