@@ -17,9 +17,10 @@ Version:        0.1.0
  * VARIABLES
  * ---------
  */
-/* colours */
+/* colors */
 /* black */
 /* yellow */
+/* blue */
 /*
  * -------
  * DOCUMENT
@@ -28,11 +29,20 @@ Version:        0.1.0
 .page {
   background: #FFF000; }
 
+/* Make blog layout full-width */
+.article-wrap.normal-grid-first-large article {
+  width: 100%; }
+
 /* 
  * ----
  * TEXT
  * ----
  */
+/* align title and subtext */
+.site-title {
+  letter-spacing: 0.07em; }
+
+/* Code + Design */
 /* h2 titles for gists */
 article > .entry-content > .tc-wrapper > h2 {
   font-size: 1.5em;
@@ -50,21 +60,39 @@ header > h2 > a > p {
   font-size: 0.5em;
   font-weight: lighter; }
 
+/* Make intro text black */
+.widget_text .textwidget {
+  color: #1c1b1b; }
+
+/* Link styling */
+a:hover {
+  text-decoration: underline; }
+
+.block-title a:hover, .entry-title a:hover {
+  color: #1c1b1b; }
+
 /* 
  * -------
  * SPACING
  * -------
  */
 header.site-header {
+  padding-top: 20px;
   margin-bottom: 100px; }
 
 /* Spacing between intro text and code/design icons */
-#about_section {
-  margin-bottom: 60px; }
+section.about-section {
+  margin-bottom: 0px; }
 
 /* spacing between code and design icons */
 .home #service_section > div > div {
   padding: 0px 25%; }
+
+/* intro text alignment */
+.textwidget {
+  text-align: justify;
+  text-align-last: center;
+  width: 41%; }
 
 /* Call to action */
 #cta_section {
@@ -72,6 +100,10 @@ header.site-header {
 
 .cta-section .widget_raratheme_companion_cta_widget > div {
   min-height: 720px; }
+
+/* Featured Projects title */
+h2.section-title {
+  margin: 80px 0px; }
 
 /* On posts */
 .single-post.full-width article.post {
@@ -101,6 +133,19 @@ header.site-header {
 .blog > #page > header.site-header {
   margin-bottom: 50px; }
 
+/* blog page spacing between tags and title/description */
+.blog .entry-meta {
+  margin: 25px 0px;
+  margin-top: 30px; }
+
+/* space after blog excerpt */
+.entry-content {
+  margin-bottom: 80px; }
+
+/* space between post iamge and title */
+.post-content-wrap {
+  margin-top: 45px; }
+
 /* 
  * ------
  * BUTTONS 
@@ -110,21 +155,47 @@ header.site-header {
  * Make the buttons square, not round 
  */
 .button-wrap .btn-cta {
-  border-radius: 0px; }
+  color: #fff;
+  border-radius: 0px;
+  background: #1c1b1b; }
 
+.button-wrap .btn-cta:hover {
+  color: #1c1b1b;
+  background: #FFF000; }
+
+/* remove back to top button */
 .back-to-top {
   border-radius: 0;
   display: none; }
 
+.home button.toggle-btn {
+  background: #FFF000; }
+
 .header-r button.toggle-btn {
   border-radius: 0; }
+
+/* button under featured projects section on homepage */
+.btn-readmore {
+  color: #1c1b1b;
+  background: #FFF000;
+  border-radius: 0px; }
+
+.btn-readmore:hover {
+  color: #FFF;
+  background: #1c1b1b; }
 
 /* Social icons in menu */
 .social-icons li a {
   border-radius: 0px; }
 
+/* tags */
 .tags a {
+  margin-right: 7px;
+  margin-left: 0px;
   border-radius: 0px; }
+
+.tags a:last-child {
+  margin-right: 0px; }
 
 .tags a:hover {
   background: #1c1b1b;
@@ -148,6 +219,52 @@ header.site-header {
 
 .top-footer .widget .widget-title {
   display: none; }
+
+.bottom-footer {
+  padding-top: 100px;
+  text-align: center; }
+
+/* 
+ * -------
+ * FOOTER
+ * -------
+ */
+/* Social icons in bottom footer */
+.bottom-footer-widget-area {
+  text-align: center; }
+
+.bottom-footer-widget-area > .social-networks {
+  display: inline-flex;
+  font-size: 60px; }
+
+.bottom-footer-widget-area > .social-networks > .rtc-social-icon-wrap {
+  margin: 0px 15px; }
+
+.bottom-footer-widget-area > h3 {
+  display: none; }
+
+.bottom-footer-widget-area li {
+  list-style: none; }
+
+/* Socail icon hover */
+.bottom-footer a:hover {
+  color: #FFF000; }
+
+/* Hide the email symbol */
+.contact-info ul.contact-list li svg {
+  position: static;
+  display: none; }
+
+/* Hide the Email title */
+.bottom-footer > div > div:nth-child(2) > div > ul > li > b {
+  display: none; }
+
+/* Center the text */
+.bottom-footer .contact-info ul.contact-list li {
+  padding-left: 0px; }
+
+.bottom-footer > div > div:nth-child(2) > div > ul {
+  padding-inline-start: 0px; }
 
 /* 
  * ----
@@ -173,10 +290,13 @@ header.site-header {
     padding: 0px 0%; }
 
   .textwidget {
-    font-size: medium; }
+    font-size: medium;
+    width: 76%; }
 
+  /* Michael Gary Dean */
   header.site-header {
-    margin-bottom: 95px; }
+    padding-top: 40px;
+    margin-bottom: 70px; }
 
   section.about-section {
     margin-bottom: 0px; }
