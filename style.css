@@ -19,7 +19,9 @@ Version:        0.1.0
  */
 /* colors */
 /* black */
-/* yellow */
+/* $accent-color: #f8ff00; /* yellow */
+/*$accent-color: rgba(250, 255, 0, 1);*/
+/*rgba(255,226,0,0.788); */
 /* blue */
 /*
  * -------
@@ -27,7 +29,7 @@ Version:        0.1.0
  * -------
  */
 .page {
-  background: #FFF000; }
+  background: #ffcc00; }
 
 /* Make blog layout full-width */
 .article-wrap.normal-grid-first-large article {
@@ -42,6 +44,9 @@ Version:        0.1.0
 .site-title {
   letter-spacing: 0.07em; }
 
+.site-branding .site-title {
+  font-size: 75px; }
+
 /* Code + Design */
 /* h2 titles for gists */
 article > .entry-content > .tc-wrapper > h2 {
@@ -50,7 +55,10 @@ article > .entry-content > .tc-wrapper > h2 {
 
 /* intro text on homepage */
 .textwidget {
-  font-size: medium; }
+  font-size: medium;
+  /*
+  text-align: left;
+  margin: 0px;*/ }
 
 #main > header > h1 > p {
   font-size: 0.4em;
@@ -140,7 +148,7 @@ h2.section-title {
 
 /* space after blog excerpt */
 .entry-content {
-  margin-bottom: 80px; }
+  margin-bottom: 40px; }
 
 /* space between post iamge and title */
 .post-content-wrap {
@@ -161,7 +169,7 @@ h2.section-title {
 
 .button-wrap .btn-cta:hover {
   color: #1c1b1b;
-  background: #FFF000; }
+  background: #ffcc00; }
 
 /* remove back to top button */
 .back-to-top {
@@ -169,7 +177,7 @@ h2.section-title {
   display: none; }
 
 .home button.toggle-btn {
-  background: #FFF000; }
+  background: #ffcc00; }
 
 .header-r button.toggle-btn {
   border-radius: 0; }
@@ -177,7 +185,7 @@ h2.section-title {
 /* button under featured projects section on homepage */
 .btn-readmore {
   color: #1c1b1b;
-  background: #FFF000;
+  background: #ffcc00;
   border-radius: 0px; }
 
 .btn-readmore:hover {
@@ -248,7 +256,7 @@ h2.section-title {
 
 /* Socail icon hover */
 .bottom-footer a:hover {
-  color: #FFF000; }
+  color: #ffcc00; }
 
 /* Hide the email symbol */
 .contact-info ul.contact-list li svg {

@@ -2,7 +2,7 @@
 /**
  * Front Page
  * 
- * @package Perfect_Portfolio
+ * @package Code_MGD
  */
 
 $home_sections = perfect_portfolio_get_home_sections();

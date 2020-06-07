@@ -20,9 +20,14 @@ Version:        0.1.0
  * ---------
  */
 
+
  /* colors */
  $dark-color: #1c1b1b;	/* black */
- $accent-color: #FFF000; /* yellow */
+ 
+/* $accent-color: #f8ff00; /* yellow */
+ /*$accent-color: rgba(250, 255, 0, 1);*/
+ $accent-color: rgba(255, 204, 0, 1);
+ /*rgba(255,226,0,0.788); */
  $second-accent-color: #01c9ff; /* blue */
 
 /*
@@ -50,9 +55,14 @@ Version:        0.1.0
  	letter-spacing: 0.07em;
  }
 
+ .site-branding .site-title {
+ 	font-size: 75px;
+ }
+
 /* Code + Design */
 section[class*="-section"] .widget-title:after, .section-title span:after {
  }
+
 
 /* h2 titles for gists */
 article > .entry-content > .tc-wrapper > h2 {
@@ -63,6 +73,9 @@ article > .entry-content > .tc-wrapper > h2 {
 /* intro text on homepage */
 .textwidget {
 	font-size: medium;
+	/*
+	text-align: left;
+	margin: 0px;*/
 }
 
 #main > header > h1 > p {
@@ -77,7 +90,7 @@ header > h2 > a > p {
 
 /* Make intro text black */
 .widget_text .textwidget {
-	color:  $dark-color;
+	color: $dark-color;
 }
 
 /* Link styling */
@@ -175,7 +188,7 @@ h2.section-title {
 
 /* space after blog excerpt */
 .entry-content {
-	margin-bottom: 80px;
+	margin-bottom: 40px;
 }
 
 /* space between post iamge and title */
@@ -377,7 +390,7 @@ h2.section-title {
 	.service-section .widgets-holder {
 		margin-top: 30px;
 		margin-bottom: 40px;
-    flex-flow: nowrap;
+    	flex-flow: nowrap;
 	}
 		.site-header .header-r {
 	   display: none;

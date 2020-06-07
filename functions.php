@@ -1,5 +1,11 @@
 <?php
 
+/**
+ * functions.php
+ * 
+ * @package Code_MGD
+ */
+
 add_action( 'wp_enqueue_scripts', 'perfect_portfolio_parent_theme_enqueue_styles' );
 
 function perfect_portfolio_parent_theme_enqueue_styles() {
